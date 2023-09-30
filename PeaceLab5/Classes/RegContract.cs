@@ -18,9 +18,9 @@ namespace PeaceLab5.Classes
             regShelter = reg;
         }
 
-        public Contract AddContract(string nameCity, DateTime data, string contractNum, double cost)
+        public Contrct AddContract(string nameCity, DateTime data, string contractNum, double cost)
         {
-            Contract contr = new Contract(data, contractNum, cost);
+            Contrct contr = new Contrct(data, contractNum, cost);
             var shelt = regShelter.AddContToShelt(nameCity, contr);
             contr.SetShelter(shelt);
             return contr;

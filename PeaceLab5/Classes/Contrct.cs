@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ServiceModel;
+using System.Runtime.Serialization;
 
 namespace PeaceLab5.Classes
 {
-    public class Contract
+    [DataContractAttribute]
+    public class Contrct
     {
         string number;
         DateTime date;
@@ -19,7 +22,7 @@ namespace PeaceLab5.Classes
             return cost;
         }
 
-        public Contract(DateTime date, string contractNum, double cost)
+        public Contrct(DateTime date, string contractNum, double cost)
         {
             number = contractNum;
             this.date = date;

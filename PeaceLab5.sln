@@ -5,7 +5,12 @@ VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeaceLab5", "PeaceLab5\PeaceLab5.csproj", "{773A8A9D-406F-42F2-B816-64B4F5440FDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{5C2A2F2D-7B21-47B8-B380-EE6762A66823}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{5C2A2F2D-7B21-47B8-B380-EE6762A66823}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Host", "Host\Host.csproj", "{6B0E3333-2AB9-4C05-9FD5-2C9B39134623}"
+	ProjectSection(ProjectDependencies) = postProject
+		{773A8A9D-406F-42F2-B816-64B4F5440FDF} = {773A8A9D-406F-42F2-B816-64B4F5440FDF}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +26,10 @@ Global
 		{5C2A2F2D-7B21-47B8-B380-EE6762A66823}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C2A2F2D-7B21-47B8-B380-EE6762A66823}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C2A2F2D-7B21-47B8-B380-EE6762A66823}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B0E3333-2AB9-4C05-9FD5-2C9B39134623}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B0E3333-2AB9-4C05-9FD5-2C9B39134623}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B0E3333-2AB9-4C05-9FD5-2C9B39134623}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B0E3333-2AB9-4C05-9FD5-2C9B39134623}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

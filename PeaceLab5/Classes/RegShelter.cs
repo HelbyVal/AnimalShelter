@@ -43,7 +43,7 @@ namespace PeaceLab5.Classes
             shelt.ReleaseAnimal(chipNum, accDate);
         }
 
-        public Shelter AddContToShelt(string nameCity, Contract contr)
+        public Shelter AddContToShelt(string nameCity, Contrct contr)
         {
             var shelt = FindShelter(nameCity);
             shelt.SetContract(contr);

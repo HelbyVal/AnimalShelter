@@ -12,7 +12,7 @@ namespace PeaceLab5.Classes
         string KPP;
         string orgType;
         City city;
-        Contract contr;
+        Contrct contr;
         RegAnimal animals;
 
         public Shelter(string inn, string kpp, string orgType, City city)
@@ -24,7 +24,7 @@ namespace PeaceLab5.Classes
             animals = new RegAnimal();
         }
 
-        public void SetContract(Contract contr)
+        public void SetContract(Contrct contr)
         {
             this.contr = contr;
         } 

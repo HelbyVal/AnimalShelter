@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PeaceLab5.Interfaces;
+using System.ServiceModel;
 
 namespace PeaceLab5.Classes
 {
-    public class Register
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerSession)]
+    public class Register : IAppService
     {
         RegContract regContract;
 
@@ -18,7 +21,7 @@ namespace PeaceLab5.Classes
             regContract = reg;
         }
 
-        public Contract AddContract(string nameCity, DateTime data, string contractNum, double cost)
+        public Contrct AddContract(string nameCity, DateTime data, string contractNum, double cost)
         {
             var contr = regContract.AddContract(nameCity, data, contractNum, cost);
             return contr;
@@ -43,6 +46,16 @@ namespace PeaceLab5.Classes
         {
             double overallCost = regContract.CreateReport(cityName, firstDate, lastDate);
             return overallCost;
+        }
+
+        public int Connect()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int Disconnect()
+        {
+            throw new NotImplementedException();
         }
     }
 }
